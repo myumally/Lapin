@@ -1,5 +1,4 @@
 package gestionnaire_animaux;
-import lapin.*;
 
 import java.util.ArrayList;
 
