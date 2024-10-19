@@ -14,8 +14,8 @@ public class Lapin extends Animaux{
         return etat;
     }
 
-    public static void setContext(GestionnaireLapin gl){
-        context=gl;
+    public static void setContext(GestionnaireLapin ges){
+        context=ges;
     }
 
     public static GestionnaireLapin getContext(){
