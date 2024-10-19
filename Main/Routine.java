@@ -1,21 +1,23 @@
 import lapin.*;
+import croco.*;
 import gestionnaire_animaux.*;
+import bateau.*;
 
 import java.util.ArrayList;
 
 public class Routine{
-    protected static int nbGestionnaires;
-    protected static ArrayList<GestionnaireAnimaux> gestionnaires = new ArrayList<GestionnaireAnimaux>();
+    protected int nbGestionnaires;
+    protected ArrayList<GestionnaireAnimaux> gestionnaires = new ArrayList<GestionnaireAnimaux>();
 
-    public static int getNbGestionnaires(){
+    public int getNbGestionnaires(){
         return nbGestionnaires;
     }
 
-    public static ArrayList<GestionnaireAnimaux> getGestionnaires(){
+    public ArrayList<GestionnaireAnimaux> getGestionnaires(){
         return gestionnaires;
     }
 
-    public static void addGestionnaire(GestionnaireAnimaux ga){
+    public void addGestionnaire(GestionnaireAnimaux ga){
         gestionnaires.add(ga);
     }
 

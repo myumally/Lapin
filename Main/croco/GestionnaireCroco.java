@@ -7,7 +7,7 @@ public class GestionnaireCroco extends GestionnaireAnimaux{
         this.nbAnimaux+=1;
         Croco croc=new Croco();
         croc.setEtat(new Jeune(croc));
-        croc.setContext(this);
+        Croco.setContext(this);
         this.addAnimaux((Animaux)croc);
         return croc;
     }

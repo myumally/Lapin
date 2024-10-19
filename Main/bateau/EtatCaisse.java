@@ -3,14 +3,14 @@ import gestionnaire_animaux.*;
 
 import java.util.ArrayList;
 
-public abstract class EtatCaisse{
-    private CaisseAnimaux caisse;
+public abstract class EtatCaisse<A extends Animaux>{
+    protected CaisseAnimaux<A> caisse;
     
-    public void setCaisse(CaisseAnimaux c){
+    public void setCaisse(CaisseAnimaux<A> c){
         caisse=c;
     }
 
-    public CaisseAnimaux getCaisse(){
+    public CaisseAnimaux<A> getCaisse(){
         return caisse;
     }
 
