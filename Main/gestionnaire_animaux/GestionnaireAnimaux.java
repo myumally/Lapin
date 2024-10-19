@@ -3,18 +3,18 @@ package gestionnaire_animaux;
 import java.util.ArrayList;
 
 public abstract class GestionnaireAnimaux{
-    protected static int nbAnimaux;
-    protected static ArrayList<Animaux> animaux = new ArrayList<Animaux>();
+    protected int nbAnimaux;
+    protected ArrayList<Animaux> animaux = new ArrayList<Animaux>();
 
-    public static int getNbAnimaux(){
+    public int getNbAnimaux(){
         return nbAnimaux;
     }
 
-    public static ArrayList<Animaux> getAnimaux(){
+    public ArrayList<Animaux> getAnimaux(){
         return animaux;
     }
 
-    public static void addAnimaux(Animaux an){
+    public void addAnimaux(Animaux an){
         animaux.add(an);
     }
 
