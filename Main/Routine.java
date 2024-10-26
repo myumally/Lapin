@@ -25,5 +25,8 @@ public class Routine{
         for(GestionnaireAnimaux ga : gestionnaires){
             ga.GererSaison();
         }
+        for(GestionnaireAnimaux ga : gestionnaires){
+            ga.updateAnimaux();
+        }
     }
 }

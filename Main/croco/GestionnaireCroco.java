@@ -11,4 +11,8 @@ public class GestionnaireCroco extends GestionnaireAnimaux{
         this.addAnimaux((Animaux)croc);
         return croc;
     }
+
+    public GestionnaireCroco(){
+        this.type="Croco";
+    }
 }

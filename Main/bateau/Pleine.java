@@ -5,11 +5,11 @@ import java.util.ArrayList;
 
 public class Pleine extends EtatCaisse{
 
-    public void AddAnimal(Animaux an){ // problem T-T
+    public void AddAnimal(Animaux an){
         caisse.getBateau().AddPassager(an);
-        // for (int ani=0; ani<caisse.getMax(); ani++){
-        //     caisse.getBateau().AddPassager((Animaux)caisse.getAnimaux().remove(ani));
-        // }
+        for (int ani=0; ani<caisse.getMax(); ani++){
+            caisse.getBateau().AddPassager((Animaux)caisse.getAnimaux().remove(0));
+        }
         caisse.setNbAnimaux(0);
         caisse.setEtat(new Vide());
         caisse.getEtat().setCaisse(caisse);

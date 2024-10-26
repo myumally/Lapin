@@ -4,11 +4,14 @@ import gestionnaire_animaux.*;
 public class GestionnaireLapin extends GestionnaireAnimaux{
 
     public Lapin CreerLapin(){
-        this.nbAnimaux+=1;
+        //this.nbAnimaux+=1;
         Lapin lap=new Lapin();
         lap.setEtat(new Jeune(lap));
-        Lapin.setContext(this);
-        this.addAnimaux((Animaux)lap);
+        this.addNewAnimaux((Animaux)lap);
         return lap;
+    }
+
+    public GestionnaireLapin(){
+        this.type="Lapin";
     }
 }
