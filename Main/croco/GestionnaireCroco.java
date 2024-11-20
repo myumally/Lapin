@@ -4,11 +4,10 @@ import gestionnaire_animaux.*;
 public class GestionnaireCroco extends GestionnaireAnimaux{
 
     public Croco CreerCroco(){
-        this.nbAnimaux+=1;
         Croco croc=new Croco();
         croc.setEtat(new Jeune(croc));
-        Croco.setContext(this);
-        this.addAnimaux((Animaux)croc);
+        croc.setId(this.nbAnimaux+this.nbNewAnimaux+1);
+        this.addNewAnimaux((Animaux)croc);
         return croc;
     }
 

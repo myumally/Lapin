@@ -5,9 +5,12 @@ import java.util.ArrayList;
 
 public class Adult extends EtatLapin{
 
-    public void GererSaison(){
+    public void SeReproduire(){
         Lapin.getContext().CreerLapin();
-        // System.out.println("    new baby " + Lapin.getContext().getNbNewAnimaux());
+    }
+
+    public void GererSaison(){
+        SeReproduire();
     }
 
     public Adult(Lapin lapinou){
