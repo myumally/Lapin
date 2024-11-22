@@ -52,20 +52,8 @@
         <mxCell id="GHf5l6DtJfJqnrNowMV0-16" value="&lt;div&gt;+ setEtat(EtatLapin)&lt;/div&gt;&lt;div&gt;+ getEtat(): EtatLapin&lt;/div&gt;&lt;div&gt;+ setId(int)&lt;/div&gt;&lt;div&gt;+ getId(): int&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ &lt;u&gt;setContext&lt;/u&gt;(GestionnaireLapin)&lt;/div&gt;&lt;div&gt;+ &lt;u&gt;getContext&lt;/u&gt;(): GestionnaireLapin&lt;/div&gt;&lt;div&gt;+ GererSaison()&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-13" vertex="1">
           <mxGeometry y="88" width="220" height="112" as="geometry" />
         </mxCell>
-        <mxCell id="GHf5l6DtJfJqnrNowMV0-17" value="GestionnaireLapin" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="235" y="871.08" width="160" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="GHf5l6DtJfJqnrNowMV0-18" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-17" vertex="1">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="GHf5l6DtJfJqnrNowMV0-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="GHf5l6DtJfJqnrNowMV0-17" vertex="1">
-          <mxGeometry y="52" width="160" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="GHf5l6DtJfJqnrNowMV0-20" value="&lt;div&gt;+ CreerLapin(): Lapin&lt;/div&gt;&lt;div&gt;+ GestionnaireLapin(String)&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-17" vertex="1">
-          <mxGeometry y="60" width="160" height="50" as="geometry" />
-        </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-25" value="Adult" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="861" y="1021.08" width="160" height="110" as="geometry" />
+          <mxGeometry x="861" y="1021.08" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-26" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-25" vertex="1">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
@@ -74,10 +62,10 @@
           <mxGeometry y="52" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-28" value="&lt;div&gt;+ SeReproduire()&lt;/div&gt;&lt;div&gt;+ GererSaison()&lt;/div&gt;&lt;div&gt;+ Adult(Lapin)&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-25" vertex="1">
-          <mxGeometry y="60" width="160" height="50" as="geometry" />
+          <mxGeometry y="60" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-29" value="Jeune" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1091" y="1021.08" width="160" height="110" as="geometry" />
+          <mxGeometry x="1091" y="1021.08" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-30" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-29" vertex="1">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
@@ -86,7 +74,7 @@
           <mxGeometry y="52" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-32" value="&lt;div&gt;+ GrowUp()&lt;/div&gt;&lt;div&gt;+ GererSaison()&lt;/div&gt;&lt;div&gt;+ Jeune(Lapin)&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-29" vertex="1">
-          <mxGeometry y="60" width="160" height="50" as="geometry" />
+          <mxGeometry y="60" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-33" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;" parent="1" source="GHf5l6DtJfJqnrNowMV0-9" target="GHf5l6DtJfJqnrNowMV0-1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -156,31 +144,31 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-46" value="Croco" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="385" y="1201.08" width="220" height="170" as="geometry" />
+          <mxGeometry x="385" y="1201.08" width="220" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="GHf5l6DtJfJqnrNowMV0-47" value="&lt;div&gt;- etat: EtatCroco&lt;/div&gt;&lt;div&gt;- &lt;u&gt;context&lt;/u&gt;: GestionnaireCroco&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-46" vertex="1">
+        <mxCell id="GHf5l6DtJfJqnrNowMV0-47" value="&lt;div&gt;- etat: EtatCroco&lt;/div&gt;&lt;div&gt;- id: int&lt;br&gt;&lt;/div&gt;&lt;div&gt;- &lt;u&gt;context&lt;/u&gt;: GestionnaireCroco&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-46" vertex="1">
           <mxGeometry y="26" width="220" height="44" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-48" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="GHf5l6DtJfJqnrNowMV0-46" vertex="1">
           <mxGeometry y="70" width="220" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="GHf5l6DtJfJqnrNowMV0-49" value="&lt;div&gt;+ setEtat(EtatCroco)&lt;/div&gt;&lt;div&gt;+ getEtat(): EtatCroco&lt;/div&gt;&lt;div&gt;+ &lt;u&gt;setContext&lt;/u&gt;(GestionnaireCroco)&lt;/div&gt;&lt;div&gt;+ &lt;u&gt;getContext&lt;/u&gt;(): GestionnaireCroco&lt;/div&gt;&lt;div&gt;+ GererSaison()&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-46" vertex="1">
-          <mxGeometry y="78" width="220" height="92" as="geometry" />
+        <mxCell id="GHf5l6DtJfJqnrNowMV0-49" value="&lt;div&gt;+ setEtat(EtatCroco)&lt;/div&gt;&lt;div&gt;+ getEtat(): EtatCroco&lt;/div&gt;&lt;div&gt;&lt;div&gt;+ setId(int)&lt;/div&gt;+ getId(): int&lt;/div&gt;&lt;div&gt;+ &lt;u&gt;setContext&lt;/u&gt;(GestionnaireCroco)&lt;/div&gt;&lt;div&gt;+ &lt;u&gt;getContext&lt;/u&gt;(): GestionnaireCroco&lt;/div&gt;&lt;div&gt;+ GererSaison()&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-46" vertex="1">
+          <mxGeometry y="78" width="220" height="112" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-50" value="GestionnaireCroco" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="40" y="1231.08" width="160" height="110" as="geometry" />
+          <mxGeometry x="40" y="1231.08" width="190" height="110" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-51" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-50" vertex="1">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-52" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="GHf5l6DtJfJqnrNowMV0-50" vertex="1">
-          <mxGeometry y="52" width="160" height="8" as="geometry" />
+          <mxGeometry y="52" width="190" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="GHf5l6DtJfJqnrNowMV0-53" value="&lt;div&gt;+ CreerCroco(): Lapin&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-50" vertex="1">
-          <mxGeometry y="60" width="160" height="50" as="geometry" />
+        <mxCell id="GHf5l6DtJfJqnrNowMV0-53" value="&lt;div&gt;+ CreerCroco(): Croco&lt;/div&gt;&lt;div&gt;+ GestionnaireCroco(type: String)&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-50" vertex="1">
+          <mxGeometry y="60" width="190" height="50" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-54" value="EtatCroco" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="796" y="1241.08" width="160" height="86" as="geometry" />
+          <mxGeometry x="796" y="1241.08" width="160" height="100" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-55" value="+ croc: Croco" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-54" vertex="1">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
@@ -188,20 +176,20 @@
         <mxCell id="GHf5l6DtJfJqnrNowMV0-56" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="GHf5l6DtJfJqnrNowMV0-54" vertex="1">
           <mxGeometry y="52" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="GHf5l6DtJfJqnrNowMV0-57" value="&lt;i&gt;+ GererSaison()&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-54" vertex="1">
-          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        <mxCell id="GHf5l6DtJfJqnrNowMV0-57" value="+ Die()&lt;div&gt;&lt;i&gt;+ GererSaison()&lt;/i&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-54" vertex="1">
+          <mxGeometry y="60" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-62" value="Jeune" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="931" y="1401.08" width="160" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="GHf5l6DtJfJqnrNowMV0-63" value="&lt;div&gt;+ GererSaison()&lt;/div&gt;&lt;div&gt;+ Jeune(Croco)&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-62" vertex="1">
-          <mxGeometry y="26" width="160" height="50" as="geometry" />
+          <mxGeometry x="931" y="1401.08" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-64" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-62" vertex="1">
-          <mxGeometry y="76" width="160" height="26" as="geometry" />
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-65" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="GHf5l6DtJfJqnrNowMV0-62" vertex="1">
-          <mxGeometry y="102" width="160" height="8" as="geometry" />
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GHf5l6DtJfJqnrNowMV0-63" value="&lt;div&gt;+ MangerUnLapin()&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ GererSaison()&lt;/div&gt;&lt;div&gt;+ Jeune(Croco)&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-62" vertex="1">
+          <mxGeometry y="60" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-67" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" parent="1" source="GHf5l6DtJfJqnrNowMV0-62" target="GHf5l6DtJfJqnrNowMV0-54" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -371,6 +359,18 @@
         </mxCell>
         <mxCell id="GHf5l6DtJfJqnrNowMV0-24" value="+ Die()&lt;br&gt;&lt;div&gt;&lt;i&gt;+ GererSaison()&lt;/i&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-21" vertex="1">
           <mxGeometry y="60" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GHf5l6DtJfJqnrNowMV0-17" value="GestionnaireLapin" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="5e1gmhQ1w_GoR9v8O3CP-33" vertex="1">
+          <mxGeometry x="175" y="63.91999999999996" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="GHf5l6DtJfJqnrNowMV0-18" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-17" vertex="1">
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GHf5l6DtJfJqnrNowMV0-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="GHf5l6DtJfJqnrNowMV0-17" vertex="1">
+          <mxGeometry y="52" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GHf5l6DtJfJqnrNowMV0-20" value="&lt;div&gt;+ CreerLapin(): Lapin&lt;/div&gt;&lt;div&gt;+ GestionnaireLapin(type: String)&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GHf5l6DtJfJqnrNowMV0-17" vertex="1">
+          <mxGeometry y="60" width="190" height="50" as="geometry" />
         </mxCell>
         <mxCell id="5e1gmhQ1w_GoR9v8O3CP-35" value="Package bateau" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1320" y="220" width="890" height="620" as="geometry" />
