@@ -11,7 +11,12 @@ public class Adult extends EtatLapin{
 
     public void GererSaison(){
         lap.grow();
-        SeReproduire();
+        if(lap.getAge()<50){
+            SeReproduire();
+        }
+        else{
+            Die();
+        }
     }
 
     public Adult(Lapin lapinou){

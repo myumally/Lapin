@@ -5,7 +5,7 @@ public abstract class EtatLapin{
     protected Lapin lap;
 
     public void Die(){
-        lap.getContext().removeAnimaux(lap.getId());
+        Lapin.getContext().addFatedToDie(lap.getId());
     }
 
     public abstract void GererSaison();

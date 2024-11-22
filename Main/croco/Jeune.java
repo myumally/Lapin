@@ -5,14 +5,18 @@ import lapin.*;
 
 public class Jeune extends EtatCroco{
 
-    private void MangerUnLapin(){
-        Lapin.getContext().removeAnimaux(0);
+    public void GrowUp(){
+        croc.setEtat(new Adult(croc));
     }
+
 
     public void GererSaison(){
         croc.grow();
         Random rand = new Random();
-        if(rand.nextInt(Lapin.getContext().getNbAnimaux()+10) < Lapin.getContext().getNbAnimaux()){
+        if (croc.getAge()==2){
+            GrowUp();
+        }
+        else if(rand.nextInt(Lapin.getContext().getNbAnimaux()+10) < Lapin.getContext().getNbAnimaux()){
             MangerUnLapin();
         }
     }

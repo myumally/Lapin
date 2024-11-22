@@ -25,5 +25,8 @@ public abstract class Animaux{
         return genre;
     }
 
+    public abstract void setId(int n);
+    public abstract int getId();
+
     public abstract void GererSaison();
 }
