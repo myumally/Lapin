@@ -55,6 +55,7 @@ public abstract class GestionnaireAnimaux{
     }
 
     public Animaux removeNewAnimaux(int an){
+        this.nbNewAnimaux-=1;
         return newAnimaux.remove(an);
     }
 
@@ -65,9 +66,8 @@ public abstract class GestionnaireAnimaux{
     }
 
     public void updateAnimaux(){
-        for(int i=0; i<this.nbNewAnimaux; i++){
+        while(this.nbNewAnimaux>0){
             this.addAnimaux(this.removeNewAnimaux(0));
         }
-        this.setNbNewAnimaux(0);
     }
 }
