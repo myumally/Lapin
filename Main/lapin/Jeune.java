@@ -8,6 +8,7 @@ public class Jeune extends EtatLapin{
     }
 
     public void GererSaison(){
+        lap.grow();
         GrowUp();
     }
 

@@ -65,18 +65,9 @@ public abstract class GestionnaireAnimaux{
     }
 
     public void updateAnimaux(){
-        // System.out.println("avant update");
-        // System.out.println("new " + this.getNbNewAnimaux());
-        // System.out.println("animaux " + this.getNbAnimaux());
-        
         for(int i=0; i<this.nbNewAnimaux; i++){
             this.addAnimaux(this.removeNewAnimaux(0));
         }
         this.setNbNewAnimaux(0);
-
-        // System.out.println("apres update");
-        // System.out.println("new " + this.getNbNewAnimaux());
-        // System.out.println("animaux " + this.getNbAnimaux());
-        // System.out.println("\n");
     }
 }

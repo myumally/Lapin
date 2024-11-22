@@ -10,6 +10,7 @@ public class Adult extends EtatLapin{
     }
 
     public void GererSaison(){
+        lap.grow();
         SeReproduire();
     }
 

@@ -10,6 +10,7 @@ public class Jeune extends EtatCroco{
     }
 
     public void GererSaison(){
+        croc.grow();
         Random rand = new Random();
         if(rand.nextInt(Lapin.getContext().getNbAnimaux()+10) < Lapin.getContext().getNbAnimaux()){
             MangerUnLapin();
