@@ -50,4 +50,10 @@ public class Bateau{
     public CaisseAnimaux<? extends Animaux> RemoveCaisse(int c){
         return caisses.remove(c);
     }
+
+    public void MaintenanceCaisses(){
+        for(<CaisseAnimaux<? extends Animaux> caisse : this.caisses){
+            caisse.Maintenance();
+        }
+    }
 }
