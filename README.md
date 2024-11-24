@@ -7,7 +7,7 @@ To-do List
 - [x] Les crocos peuvent se reproduire
 - [x] Les crocos peuvent mourir
 - [x] Des caisses où on peut mettre des animaux, un seul type d'animal à chaque fois
-- [ ] Les caisses peuvent se casser
+- [x] Les caisses peuvent se casser
 - [x] Un bateau où on peut mettre des animaux en liberté et des caisses
 - [ ] Des cailloux, certains animaux peuvent en avoir peur et d'autre non
 - [ ] Des pirates, ils font du trafic d'animaux

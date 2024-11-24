@@ -55,6 +55,14 @@ public class CaisseAnimaux<A extends Animaux>{
         return bateau;
     }
 
+    public void Maintenance(){
+        this.etat.Maintenance();
+    }
+
+    public void SeCasse(){
+        this.etat.SeCasse();
+    }
+
     public CaisseAnimaux(int max, Bateau bat){
         setMax(max);
         setEtat(new Vide());

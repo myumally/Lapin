@@ -43,11 +43,12 @@ public class Main{
         }
 
         for(int i=0; i<10; i++){
+            caisss.Maintenance();
             gc.CreerCroco();
-            // caisss.AddAnimal(gc.CreerCroco());
-            // System.out.println("dans la caisse : "+ caisss.getNbAnimaux());
-            // System.out.println("se balade sur le bateau : "+ bat.getNbPassagers());
-            // System.out.println("\n");
+            caisss.AddAnimal(gc.CreerCroco());
+            System.out.println("dans la caisse : "+ caisss.getNbAnimaux());
+            System.out.println("se balade sur le bateau : "+ bat.getNbPassagers());
+            System.out.println("\n");
         }
 
         for(int i=0; i<7; i++){

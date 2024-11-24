@@ -5,6 +5,9 @@ import java.util.ArrayList;
 
 public class Rempli extends EtatCaisse{
 
+    public void Maintenance(){
+    }
+
     public void AddAnimal(Animaux an){
         caisse.getAnimaux().add(an);
         caisse.setNbAnimaux(caisse.getNbAnimaux()+1);
