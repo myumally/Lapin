@@ -1,7 +1,8 @@
 package lapin;
 import gestionnaire_animaux.*;
+import agents.*;
 
-public abstract class EtatLapin{
+public abstract class EtatLapin extends State{
     protected Lapin lap;
 
     public void Die(){

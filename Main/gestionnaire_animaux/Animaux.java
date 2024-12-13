@@ -1,6 +1,8 @@
 package gestionnaire_animaux;
 
-public abstract class Animaux{
+import agents.*;
+
+public abstract class Animaux extends Agents{
 
     protected int genre; // 0 : femelle / 1 : male / 2 : autre
     protected int age=0; // en saison
