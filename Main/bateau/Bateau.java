@@ -17,7 +17,7 @@ public class Bateau{
         return nbPassagers;
     }
 
-    public void setNbAnimauxCaisses(int nb){
+    public void setNbCaisses(int nb){
         nbCaisses = nb;
     }
 
@@ -52,7 +52,7 @@ public class Bateau{
     }
 
     public void MaintenanceCaisses(){
-        for(<CaisseAnimaux<? extends Animaux> caisse : this.caisses){
+        for(CaisseAnimaux<? extends Animaux> caisse : this.caisses){
             caisse.Maintenance();
         }
     }

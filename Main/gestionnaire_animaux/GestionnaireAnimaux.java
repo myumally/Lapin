@@ -111,6 +111,7 @@ public abstract class GestionnaireAnimaux{
             i=0;
             id=this.removeFatedToDie(0);
             while((i>=0) && (i<nbAnimaux)){
+                /*
                 if(id==getAnimaux().get(i).getId()){
                     this.removeAnimaux(i);
                     i=-1;
@@ -118,6 +119,10 @@ public abstract class GestionnaireAnimaux{
                 else{
                     i+=1;
                 }
+                */
+                if(id==getAnimaux().get(i).getId())
+                    this.removeAnimaux(i);
+                i+=1;
             }
             
         }
