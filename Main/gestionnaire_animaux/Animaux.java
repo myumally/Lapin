@@ -1,5 +1,6 @@
-import agents.*;
 package gestionnaire_animaux;
+
+import agents.*;
 
 public abstract class Animaux extends Agents{
 

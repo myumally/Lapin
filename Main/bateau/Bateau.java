@@ -52,7 +52,7 @@ public class Bateau{
     }
 
     public void MaintenanceCaisses(){
-        for(<CaisseAnimaux<? extends Animaux> caisse : this.caisses){
+        for(CaisseAnimaux<? extends Animaux> caisse : this.caisses){
             caisse.Maintenance();
         }
     }
