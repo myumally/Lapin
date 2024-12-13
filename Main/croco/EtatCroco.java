@@ -1,8 +1,9 @@
 package croco;
 import gestionnaire_animaux.*;
 import lapin.*;
+import agents;
 
-public abstract class EtatCroco{
+public abstract class EtatCroco extends State{
     protected Croco croc;
     private static int nbLapinMange=0;
 
