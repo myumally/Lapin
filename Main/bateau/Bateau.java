@@ -56,4 +56,28 @@ public class Bateau{
             caisse.Maintenance();
         }
     }
+
+    public CaisseAnimaux<? extends Animaux> firstToRepare(){
+        CaisseAnimaux<? extends Animaux> res = caisse.get(0);
+        int i = 0;
+        while ((i < getNbCaisses()) && (res.getEtat().getClass() != bateau.Cassée)){
+            i++;
+            res = caisse.get(i);
+        }
+        if (i == getNbCaisses())
+            res = null;
+        return res;
+    }
+
+    public CaisseAnimaux<? extends Animaux> firstToBreak(){
+        CaisseAnimaux<? extends Animaux> res = caisse.get(0);
+        int i = 0;
+        while ((i < getNbCaisses()) && (res.getEtat().getClass() == bateau.Cassée)){
+            i++;
+            res = caisse.get(i);
+        }
+        if (i == getNbCaisses())
+            res = null;
+        return res;
+    }
 }

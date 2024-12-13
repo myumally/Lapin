@@ -2,6 +2,8 @@ import bateau.*;
 import croco.*;
 import gestionnaire_animaux.*;
 import lapin.*;
+import humains.*;
+import pirate.*;
 
 public class Main{
 
@@ -35,6 +37,10 @@ public class Main{
 
         CaisseAnimaux<Croco> caisss = new CaisseAnimaux<Croco>(3,bat);
         bat.AddCaisse(caisss);
+
+        caisss.AddAnimal(gc.CreerCroco());
+        caisss.SeCasse();
+        System.out.println("getClass : " + caisss.getEtat().getClass());
 
         for(int i=0; i<7; i++){ // 1, 1, 2, 3, 5, 8, 13 et 21
             System.out.println("saison : "+ i);

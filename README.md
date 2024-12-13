@@ -26,8 +26,9 @@ A faire :
     - patrons de conceptions :
         - state pattern
         - factory machine
-        - composite pattern : faire une hiérarchie des environnements, monde -> bateau -> caisse
+        - composite pattern : faire une hiérarchie des environnements, monde -> bateau -> caisse (composite pattern pour gérer les pirates)
     - ne pas trop faire.
     - implémenter une carte (position pour  les lapins) où il y a des caisse, avec des pirates, et des caisses qui se cassent ou sont réparées
     - deuxième étapes les animaux intéragissent entre eux
     - puis on a plusieurs bateaux, qui intéragissent entre eux
+    - mettre dans le rapport ce qu'on a pas eu le temps de finir
