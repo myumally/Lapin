@@ -1,9 +1,10 @@
 package bateau;
 import gestionnaire_animaux.*;
+import agents.*;
 
 import java.util.ArrayList;
 
-public class CaisseAnimaux<A extends Animaux>{
+public class CaisseAnimaux<A extends Animaux> extends Agents{
 
     private static int NB_MAX_ANIMAUX;
     private int nbAnimaux;

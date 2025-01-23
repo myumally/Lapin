@@ -23,7 +23,7 @@ public class Main{
 
         gl.updateAnimaux();
         
-        Lapin.getContext().CreerLapin();
+        Lapin.getContext().CreerLapin(0,0);
 
         GestionnaireCroco gc = new GestionnaireCroco();
         Croco.setContext(gc);
@@ -36,9 +36,11 @@ public class Main{
         Bateau bat = new Bateau();
 
         CaisseAnimaux<Croco> caisss = new CaisseAnimaux<Croco>(3,bat);
+        caisss.setX(0);
+        caisss.setY(0);
         bat.AddCaisse(caisss);
 
-        caisss.AddAnimal(gc.CreerCroco());
+        caisss.AddAnimal(gc.CreerCroco(caisss.getX(), caisss.getY()));
         caisss.SeCasse();
         System.out.println("getClass : " + caisss.getEtat().getClass());
 
@@ -50,8 +52,8 @@ public class Main{
 
         for(int i=0; i<10; i++){
             caisss.Maintenance();
-            gc.CreerCroco();
-            caisss.AddAnimal(gc.CreerCroco());
+            gc.CreerCroco(0,0);
+            caisss.AddAnimal(gc.CreerCroco(caisss.getX(), caisss.getY()));
             System.out.println("dans la caisse : "+ caisss.getNbAnimaux());
             System.out.println("se balade sur le bateau : "+ bat.getNbPassagers());
             System.out.println("\n");

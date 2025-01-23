@@ -58,11 +58,11 @@ public class Bateau{
     }
 
     public CaisseAnimaux<? extends Animaux> firstToRepare(){
-        CaisseAnimaux<? extends Animaux> res = caisse.get(0);
+        CaisseAnimaux<? extends Animaux> res = caisses.get(0);
         int i = 0;
-        while ((i < getNbCaisses()) && (res.getEtat().getClass() != bateau.Cassée)){
+        while ((i < getNbCaisses()) && !(res.getEtat() instanceof Cassée)){
             i++;
-            res = caisse.get(i);
+            res = caisses.get(i);
         }
         if (i == getNbCaisses())
             res = null;
@@ -70,11 +70,11 @@ public class Bateau{
     }
 
     public CaisseAnimaux<? extends Animaux> firstToBreak(){
-        CaisseAnimaux<? extends Animaux> res = caisse.get(0);
+        CaisseAnimaux<? extends Animaux> res = caisses.get(0);
         int i = 0;
-        while ((i < getNbCaisses()) && (res.getEtat().getClass() == bateau.Cassée)){
+        while ((i < getNbCaisses()) && (res.getEtat() instanceof Cassée)){
             i++;
-            res = caisse.get(i);
+            res = caisses.get(i);
         }
         if (i == getNbCaisses())
             res = null;
