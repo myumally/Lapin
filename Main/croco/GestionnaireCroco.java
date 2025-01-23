@@ -16,4 +16,9 @@ public class GestionnaireCroco extends GestionnaireAnimaux{
     public GestionnaireCroco(){
         this.type="Croco";
     }
+
+    public void GererSaison(){
+        EtatCroco.ResetNbLapinMange();
+        super.GererSaison();
+    }
 }

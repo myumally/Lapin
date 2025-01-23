@@ -30,8 +30,8 @@ public class Main{
 
         gl.updateAnimaux();
 
-        rou.addGestionnaire(gl);
         rou.addGestionnaire(gc);
+        rou.addGestionnaire(gl); 
 
         Bateau bat = new Bateau();
 
