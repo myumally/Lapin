@@ -1,10 +1,12 @@
 package pirates;
 
-public class Cassero extends Pirate{
-    private int id = 0;
-    private bool occupe = false;
-    private CaisseAnimaux<? extends Animaux> cible;
+import bateau.*;
+import gestionnaire_animaux.*;
 
+public class Reparo extends Pirate{
+    private int id = 0;
+    private boolean occupe = false;
+    private CaisseAnimaux<? extends Animaux> cible;
 
     public int getId(){
         return id;
@@ -14,14 +16,14 @@ public class Cassero extends Pirate{
         id=n;
     }
     
-    public bool IsOccupe(){
-        return id;
+    public boolean IsOccupe(){
+        return occupe;
     }
 
-    public void setOccupe(bool b){
+    public void setOccupe(boolean b){
         occupe = b;
     }
-
+    
     public CaisseAnimaux<? extends Animaux> getCible(){
         return cible;
     }
@@ -31,7 +33,7 @@ public class Cassero extends Pirate{
     }
 
     public void trouverCible(){
-        this.setCible(this.getBateau().firstToBreak());
+        this.setCible(this.getBateau().firstToRepare());
         if (getCible() == null)
             setOccupe(false);
         else
@@ -41,6 +43,6 @@ public class Cassero extends Pirate{
     public void GererSaison(){
         trouverCible();
         if (IsOccupe())
-            cible.seCasse();
+            cible.Maintenance();
     }
 }

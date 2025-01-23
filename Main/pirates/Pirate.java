@@ -5,7 +5,7 @@ import bateau.*;
 
 
 public abstract class Pirate extends Humains{
-    private Bateau bat;
+    private Bateau bateau;
 
     public void setBateau(Bateau bat){
         bateau=bat;
