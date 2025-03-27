@@ -31,7 +31,7 @@ public class Croco extends Animaux{
         return context;
     }
 
-    public void GererSaison(){
+    public void GererSaison(){ 
         etat.GererSaison();
     }
 }

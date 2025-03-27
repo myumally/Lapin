@@ -15,7 +15,7 @@ public abstract class EtatCaisse<A extends Animaux>{
     }
 
     public void SeCasse(){
-        for (int ani=0; ani<caisse.getMax(); ani++){
+        for (int ani=0; ani<caisse.getNbAnimaux(); ani++){
             caisse.getBateau().AddPassager((Animaux)caisse.getAnimaux().remove(0));
         }
         caisse.setNbAnimaux(0);

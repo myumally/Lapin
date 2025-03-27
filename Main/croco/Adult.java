@@ -5,8 +5,8 @@ import java.util.ArrayList;
 
 public class Adult extends EtatCroco{
 
-    public void SeReproduire(){
-        Croco.getContext().CreerCroco();
+    public void SeReproduire(Croco croc){
+        Croco.getContext().CreerCroco(croc.getX(), croc.getY());
     }
 
     public void GererSaison(){
@@ -14,14 +14,14 @@ public class Adult extends EtatCroco{
         Random rand = new Random();
         Random rand2 = new Random();
         croc.grow();
-        if(rand.nextInt(Lapin.getContext().getNbAnimaux()+10) < Lapin.getContext().getNbAnimaux()){
+        if (croc.getAge() >= 160) {
+            Die();
+        }
+        else if (rand.nextInt(Lapin.getContext().getNbAnimaux()+10) < Lapin.getContext().getNbAnimaux()){
             MangerUnLapin();
         }
-        else if((croc.getAge()<50) && (rand2.nextInt(10)<6)){
-            SeReproduire();
-        }
-        else{
-            Die();
+        else if (rand2.nextInt(10) < 6){
+            SeReproduire(croc);
         }
     }
 

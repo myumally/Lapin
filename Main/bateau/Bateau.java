@@ -17,7 +17,7 @@ public class Bateau{
         return nbPassagers;
     }
 
-    public void setNbAnimauxCaisses(int nb){
+    public void setNbCaisses(int nb){
         nbCaisses = nb;
     }
 
@@ -55,5 +55,29 @@ public class Bateau{
         for(CaisseAnimaux<? extends Animaux> caisse : this.caisses){
             caisse.Maintenance();
         }
+    }
+
+    public CaisseAnimaux<? extends Animaux> firstToRepare(){
+        CaisseAnimaux<? extends Animaux> res = caisses.get(0);
+        int i = 0;
+        while ((i < getNbCaisses()) && !(res.getEtat() instanceof Cassée)){
+            i++;
+            res = caisses.get(i);
+        }
+        if (i == getNbCaisses())
+            res = null;
+        return res;
+    }
+
+    public CaisseAnimaux<? extends Animaux> firstToBreak(){
+        CaisseAnimaux<? extends Animaux> res = caisses.get(0);
+        int i = 0;
+        while ((i < getNbCaisses()) && (res.getEtat() instanceof Cassée)){
+            i++;
+            res = caisses.get(i);
+        }
+        if (i == getNbCaisses())
+            res = null;
+        return res;
     }
 }

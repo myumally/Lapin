@@ -7,16 +7,19 @@ public abstract class EtatCroco extends State{
     protected Croco croc;
     private static int nbLapinMange=0;
 
+    public static void ResetNbLapinMange(){
+        nbLapinMange = 0;
+    }
+
     public void Die(){
         Croco.getContext().addFatedToDie(croc.getId());
     }
 
     public void MangerUnLapin(){
-        if (Lapin.getContext().getNbFatedToDie()==0){
-            nbLapinMange=0;
+        if(nbLapinMange < Lapin.getContext().getNbAnimaux()){
+            Lapin.getContext().addFatedToDie(Lapin.getContext().getAnimaux().get(this.nbLapinMange).getId());
+            nbLapinMange+=1;
         }
-        Lapin.getContext().addFatedToDie(Lapin.getContext().getAnimaux().get(this.nbLapinMange).getId());;
-        this.nbLapinMange+=1;
     }
 
     public abstract void GererSaison();
